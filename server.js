@@ -32,6 +32,4 @@ app.get("/", (req, res) => {
   res.send("working");
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening On Port ${PORT}`);
-});
+app.listen(PORT, '0.0.0.0', () => console.log(`Listening on port ${PORT}`));
